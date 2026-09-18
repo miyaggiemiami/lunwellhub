@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif text-forest;
+  }
+
+  /* Visible keyboard focus for accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #C9A24B;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  @keyframes nav-rise {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes nav-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .nav-shell {
+    animation: nav-rise 500ms ease-out both;
+  }
+
+  .nav-link {
+    animation: nav-rise 450ms ease-out both;
+  }
+
+  .nav-mobile-panel {
+    animation: nav-panel-in 250ms ease-out both;
+    transform-origin: top center;
+  }
+
+  .nav-mobile-link {
+    animation: nav-rise 300ms ease-out both;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3 font-medium text-sm transition-colors duration-200;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-forest hover:bg-gold-300;
+  }
+  .btn-outline {
+    @apply btn border border-forest/15 bg-transparent text-forest hover:bg-forest hover:text-white;
+  }
+  .btn-outline-light {
+    @apply btn border border-white/30 bg-transparent text-white hover:bg-white hover:text-forest;
+  }
+  .eyebrow {
+    @apply text-sm font-semibold tracking-wide text-gold-500;
+  }
+  .container-content {
+    @apply mx-auto max-w-content px-6 md:px-10;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+}
