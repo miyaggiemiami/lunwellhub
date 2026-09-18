@@ -41,6 +41,8 @@ const DOCTOR_FEATURES = [
   },
 ]
 
+const DOCTOR_IMAGES = Array.from({ length: 8 }, (_, index) => `/doc${index + 1}.jpg`)
+
 const SERVICES = [
   {
     title: 'Medical Weight Management',
@@ -85,11 +87,14 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-forest-900 text-white">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-forest-800/95 via-forest-900/90 to-forest-900" />
+      <section
+        className="relative overflow-hidden bg-forest-900 bg-cover bg-center text-white"
+        style={{ backgroundImage: "url('/herosection%20image.png')" }}
+      >
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-forest-900/85 via-forest-900/70 to-forest-900/85" />
         <div className="container-content relative pb-0 pt-16 md:pt-24">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-normal leading-[1.1] md:text-6xl">
+            <h1 className="text-4xl font-normal leading-[1.1] text-white md:text-6xl">
               Doctor-Led Wellness for Sustainable Transformation
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
@@ -106,9 +111,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mt-12 h-64 w-full overflow-hidden rounded-t-3xl md:h-80" aria-hidden="true">
-            <ImagePlaceholder label="Macro botanical leaf with water droplet" tone="dark" className="h-full w-full rounded-t-3xl rounded-b-none" />
-          </div>
         </div>
 
         {/* Trust badges strip */}
@@ -192,8 +194,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative">
-            <ImagePlaceholder label="Portrait of LunaWell's doctor in clinic" className="aspect-[4/5] w-full" />
+          <div className="doctor-gallery relative mx-auto aspect-[4/5] w-full max-w-[30rem] overflow-hidden rounded-3xl bg-cream shadow-[0_18px_50px_rgba(20,39,31,0.12)] lg:ml-auto lg:w-[86%]" aria-label="Portraits of LunaWell's doctor in clinic" role="region">
+            <div className="doctor-gallery-track flex h-full w-[1600%]">
+              {[...DOCTOR_IMAGES, ...DOCTOR_IMAGES].map((image, index) => (
+                <div key={`${image}-${index}`} className="h-full w-[6.25%] shrink-0 p-1">
+                  <img
+                    src={image}
+                    alt={index < DOCTOR_IMAGES.length ? "LunaWell's doctor in clinic" : ''}
+                    aria-hidden={index >= DOCTOR_IMAGES.length}
+                    className="h-full w-full rounded-[1.25rem] object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

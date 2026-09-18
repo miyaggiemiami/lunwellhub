@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-labelledby="title desc">
+  <title id="title">LunaWell logo</title>
+  <desc id="desc">A gold L with two green leaves and a gold sun</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ce68" />
+      <stop offset="0.48" stop-color="#c38d2f" />
+      <stop offset="1" stop-color="#f0c65b" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0c351b" />
+      <stop offset="1" stop-color="#4d8230" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#gold)" d="M48 38h133c-14 5-25 10-31 19v128c0 14-1 23-5 29l-43 25c5-10 8-20 8-34V58c0-10-12-16-62-20Z" />
+  <path fill="url(#gold)" d="M81 216c16 10 36 15 62 15h62c13-18 22-38 27-60-14 20-27 34-41 42h-69c-17 0-30-5-41-15Z" />
+  <path fill="url(#leaf)" d="M74 199c-24-9-37-25-37-48 0-26 17-48 47-66-9 20-9 39 0 55 7 13 18 20 31 23-12 15-25 27-41 36Z" />
+  <path fill="url(#leaf)" d="M105 175c-5-43 17-79 66-108 23-13 40-27 49-45 2 39-7 72-27 97-21 26-51 42-88 56Z" />
+  <path fill="#1d4b22" d="M113 160c21-31 51-57 91-78-27 25-50 52-69 80l-22 18Z" opacity=".8" />
+  <circle cx="173" cy="72" r="18" fill="url(#gold)" />
+</svg>
