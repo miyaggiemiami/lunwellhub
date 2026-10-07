@@ -68,10 +68,12 @@ const PRODUCTS = [
   {
     name: 'LunaWell Balance Tea',
     body: 'Harmonising adaptogenic blend for hormonal balance and calm.',
+    image: '/Balance%20Tea%20Herbal%20Jar%20Still%20Life.png',
   },
   {
     name: 'LunaWell Restore Oil',
     body: 'Premium botanical oil to nourish and revitalise from within.',
+    image: '/Botanical%20Facial%20Oil%20Still%20Life.png',
   },
   {
     name: 'Vital Multivitamin',
@@ -80,6 +82,7 @@ const PRODUCTS = [
   {
     name: 'LunaWell Herbal Oils',
     body: 'Botanical-grade oils supporting detoxification and restoration.',
+    image: '/Botanical%20Amber%20Oils%20on%20Marble.png',
   },
 ]
 
@@ -255,7 +258,11 @@ export default function Home() {
                 to="/products"
                 className="group overflow-hidden rounded-2xl bg-cream shadow-sm transition-shadow hover:shadow-md"
               >
-                <ImagePlaceholder label={product.name} className="aspect-square w-full rounded-none" />
+                {product.image ? (
+                  <img src={product.image} alt={product.name} className="aspect-square w-full object-cover" />
+                ) : (
+                  <ImagePlaceholder label={product.name} className="aspect-square w-full rounded-none" />
+                )}
                 <div className="p-5">
                   <h3 className="text-base">{product.name}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{product.body}</p>
