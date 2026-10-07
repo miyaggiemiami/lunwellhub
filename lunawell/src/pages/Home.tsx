@@ -73,7 +73,7 @@ const PRODUCTS = [
   {
     name: 'LunaWell Restore Oil',
     body: 'Premium botanical oil to nourish and revitalise from within.',
-    image: '/Botanical%20Facial%20Oil%20Still%20Life.png',
+    image: '/Botanical%20Facial%20Oil%20in%20Soft%20Light.png',
   },
   {
     name: 'Vital Multivitamin',
