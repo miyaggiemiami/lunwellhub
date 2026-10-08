@@ -35,6 +35,7 @@ lunawell/
 │   │   ├── Products.tsx
 │   │   ├── Fees.tsx
 │   │   ├── Book.tsx
+│   │   ├── ClinicalPsychologist.tsx
 │   │   └── NotFound.tsx
 │   ├── App.tsx               # Route definitions
 │   ├── main.tsx               # App entry point

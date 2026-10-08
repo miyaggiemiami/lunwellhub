@@ -9,6 +9,7 @@ import NaturalTherapies from './pages/NaturalTherapies'
 import Products from './pages/Products'
 import Fees from './pages/Fees'
 import Book from './pages/Book'
+import ClinicalPsychologist from './pages/ClinicalPsychologist'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/fees" element={<Fees />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/clinical-psychologist" element={<ClinicalPsychologist />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

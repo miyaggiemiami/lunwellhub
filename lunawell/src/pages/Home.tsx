@@ -49,18 +49,21 @@ const SERVICES = [
     body: 'Doctor-supervised programmes for safe and sustainable weight loss through metabolic optimisation and evidence-based protocols.',
     to: '/weight-management',
     label: 'Weight management consultation',
+    image: '/weight-management-consultation.jpg',
   },
   {
     title: 'Peptide Therapy',
     body: 'Advanced peptide therapies supporting metabolic health, inflammation reduction, recovery, and skin health under medical supervision.',
     to: '/peptide-therapy',
     label: 'Vials of peptide therapy compounds',
+    image: undefined,
   },
   {
     title: 'Natural Therapies',
     body: 'Natural wellness treatments restoring balance and supporting wellbeing through botanical formulations and adaptogenic science.',
     to: '/natural-therapies',
     label: 'Botanical natural therapy ingredients',
+    image: '/natural-therapies-botanicals.png',
   },
 ]
 
@@ -230,7 +233,11 @@ export default function Home() {
                 to={service.to}
                 className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md"
               >
-                <ImagePlaceholder label={service.label} className="aspect-[4/3] w-full rounded-none" />
+                {service.image ? (
+                  <img src={service.image} alt={service.label} className="aspect-[4/3] w-full object-cover" />
+                ) : (
+                  <ImagePlaceholder label={service.label} className="aspect-[4/3] w-full rounded-none" />
+                )}
                 <div className="p-6">
                   <h3 className="text-xl">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-soft">{service.body}</p>

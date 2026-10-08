@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: 'Weight Management', to: '/weight-management' },
   { label: 'Peptide Therapy', to: '/peptide-therapy' },
   { label: 'Natural Therapies', to: '/natural-therapies' },
+  { label: 'Clinical Psychologist', to: '/clinical-psychologist' },
   { label: 'Products', to: '/products' },
   { label: 'Fees', to: '/fees' },
   { label: 'Book', to: '/book' },
@@ -35,7 +36,7 @@ export default function Header() {
             <span className="font-serif text-xl font-semibold tracking-tight text-forest">LunaWell</span>
           </Link>
 
-          <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Primary">
             {NAV_LINKS.map((link, index) => (
               <NavLink
                 key={link.to}
@@ -53,7 +54,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden shrink-0 lg:block">
+          <div className="hidden shrink-0 xl:block">
             <Link to="/book" className="btn-gold px-5 py-2.5 text-xs uppercase tracking-[0.12em] transition-transform hover:-translate-y-0.5">
               Book Consultation
             </Link>
@@ -61,7 +62,7 @@ export default function Header() {
 
           <button
             type="button"
-            className="flex items-center gap-2 border-l border-forest/15 pl-4 text-xs font-semibold uppercase tracking-[0.14em] text-forest lg:hidden"
+            className="flex items-center gap-2 border-l border-forest/15 pl-4 text-xs font-semibold uppercase tracking-[0.14em] text-forest xl:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             aria-controls="mobile-nav"
@@ -73,7 +74,7 @@ export default function Header() {
         </div>
 
         {open && (
-          <nav id="mobile-nav" aria-label="Primary" className="nav-mobile-panel border-t border-forest/10 pb-5 pt-3 lg:hidden">
+          <nav id="mobile-nav" aria-label="Primary" className="nav-mobile-panel border-t border-forest/10 pb-5 pt-3 xl:hidden">
             <div className="grid gap-0.5">
               {NAV_LINKS.map((link, index) => (
                 <NavLink

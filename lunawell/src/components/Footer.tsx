@@ -39,6 +39,7 @@ export default function Footer() {
           <ul className="space-y-2.5 text-sm">
             <li><Link to="/fees" className="transition-colors hover:text-gold">Fees</Link></li>
             <li><Link to="/book" className="transition-colors hover:text-gold">Book a Consultation</Link></li>
+            <li><Link to="/clinical-psychologist" className="transition-colors hover:text-gold">Independent Clinical Psychologist</Link></li>
             <li><Link to="/" className="transition-colors hover:text-gold">About the Doctor</Link></li>
           </ul>
         </div>

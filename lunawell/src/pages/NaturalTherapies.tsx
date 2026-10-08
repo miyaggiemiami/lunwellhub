@@ -1,5 +1,4 @@
 import PageHero from '@/components/PageHero'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTASection from '@/components/CTASection'
 
 const THERAPIES = [
@@ -19,7 +18,11 @@ export default function NaturalTherapies() {
 
       <section className="section bg-white">
         <div className="container-content grid items-center gap-12 lg:grid-cols-2">
-          <ImagePlaceholder label="Botanical ingredients and herbal tinctures" className="aspect-[4/3] w-full order-last lg:order-first" />
+          <img
+            src="/natural-therapies-botanicals.png"
+            alt="Fresh botanicals, herbal ingredients, and a mortar and pestle"
+            className="order-last aspect-[4/3] w-full rounded-2xl object-cover lg:order-first"
+          />
           <div>
             <h2 className="text-3xl md:text-4xl">Nature, medically curated</h2>
             <p className="mt-4 text-ink-soft">
