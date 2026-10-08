@@ -78,6 +78,7 @@ const PRODUCTS = [
   {
     name: 'Vital Multivitamin',
     body: 'Comprehensive supplement for metabolic function and cellular vitality.',
+    image: '/vital-multivitamin.png',
   },
   {
     name: 'LunaWell Herbal Oils',
