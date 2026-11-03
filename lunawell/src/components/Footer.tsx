@@ -15,10 +15,22 @@ export default function Footer() {
             Doctor-led wellness specialising in weight management, peptide therapy and natural therapies.
           </p>
           <div className="mt-5 flex gap-3">
-            <a href="#" aria-label="LunaWell on Instagram" className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold">
+            <a
+              href={SITE.instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LunaWell on Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold"
+            >
               <Instagram className="h-4 w-4" />
             </a>
-            <a href="#" aria-label="LunaWell on Facebook" className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold">
+            <a
+              href={SITE.facebookUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LunaWell on Facebook"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold"
+            >
               <Facebook className="h-4 w-4" />
             </a>
           </div>
@@ -40,7 +52,7 @@ export default function Footer() {
             <li><Link to="/fees" className="transition-colors hover:text-gold">Fees</Link></li>
             <li><Link to="/book" className="transition-colors hover:text-gold">Book a Consultation</Link></li>
             <li><Link to="/clinical-psychologist" className="transition-colors hover:text-gold">Independent Clinical Psychologist</Link></li>
-            <li><Link to="/" className="transition-colors hover:text-gold">About the Doctor</Link></li>
+            <li><Link to="/#meet-your-doctor" className="transition-colors hover:text-gold">About the Doctor</Link></li>
           </ul>
         </div>
 
