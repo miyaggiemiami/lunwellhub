@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: 'Peptide Therapy', to: '/peptide-therapy' },
   { label: 'Natural Therapies', to: '/natural-therapies' },
   { label: 'Clinical Psychologist', to: '/clinical-psychologist' },
-  { label: 'Products', to: '/products' },
+  { label: 'Online Shop', to: '/products' },
   { label: 'Fees', to: '/fees' },
   { label: 'Book', to: '/book' },
 ]

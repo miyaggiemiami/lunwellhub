@@ -250,7 +250,7 @@ export default function Home() {
       <section className="section bg-white">
         <div className="container-content">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="eyebrow">Shop The Range</p>
+            <p className="eyebrow">Online Shop Coming Soon</p>
             <h2 className="mt-3 text-3xl md:text-4xl">Wellness to take home</h2>
           </div>
 
@@ -272,7 +272,7 @@ export default function Home() {
 
           <div className="mt-10 text-center">
             <Link to="/products" className="btn-outline">
-              View All Products <ArrowRight className="h-4 w-4" />
+              Preview the Shop <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function Footer() {
             <li><Link to="/weight-management" className="transition-colors hover:text-gold">Weight Management</Link></li>
             <li><Link to="/peptide-therapy" className="transition-colors hover:text-gold">Peptide Therapy</Link></li>
             <li><Link to="/natural-therapies" className="transition-colors hover:text-gold">Natural Therapies</Link></li>
-            <li><Link to="/products" className="transition-colors hover:text-gold">Products</Link></li>
+            <li><Link to="/products" className="transition-colors hover:text-gold">Online Shop</Link></li>
           </ul>
         </div>
 

@@ -1,5 +1,5 @@
 import PageHero from '@/components/PageHero'
-import CTASection from '@/components/CTASection'
+import { SITE } from '@/config/site'
 
 const PRODUCTS = [
   {
@@ -28,9 +28,9 @@ export default function Products() {
   return (
     <>
       <PageHero
-        eyebrow="Products"
-        title="Wellness to take home"
-        body="Doctor-curated supplements and botanicals that extend your treatment pathway beyond the clinic."
+        eyebrow="Online Shop"
+        title="Shop LunaWell online — coming soon"
+        body="Explore the full product range while we prepare a convenient way to shop online. Online ordering will be available soon."
       />
 
       <section className="section bg-white">
@@ -47,12 +47,26 @@ export default function Products() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-ink-faint">
-            Products are available for purchase in-clinic or can be added to your treatment plan following a consultation.
+            All products shown here will be part of our online shop.
           </p>
         </div>
       </section>
 
-      <CTASection title="Ask us which products suit your plan" />
+      <section className="px-6 pb-20 pt-4 md:px-10">
+        <div className="container-content rounded-3xl bg-gradient-to-br from-forest-900 to-forest-700 px-6 py-16 text-center text-white md:py-20">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gold">Coming Soon</p>
+          <h2 className="mx-auto mt-3 max-w-xl text-3xl text-white md:text-4xl">Need a product before launch?</h2>
+          <p className="mx-auto mt-4 max-w-lg text-white/70">
+            Contact our team to ask about product availability while we prepare the online shop.
+          </p>
+          <a
+            href={`mailto:${SITE.email}?subject=Product%20availability`}
+            className="btn-gold mt-8 inline-flex"
+          >
+            Ask about availability
+          </a>
+        </div>
+      </section>
     </>
   )
 }
