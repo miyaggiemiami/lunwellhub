@@ -37,8 +37,8 @@ export default function Products() {
         <div className="container-content">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {PRODUCTS.map((product) => (
-              <div key={product.name} className="overflow-hidden rounded-2xl bg-cream shadow-sm">
-                <img src={product.image} alt={product.name} className="aspect-square w-full object-cover" />
+              <div key={product.name} className="group card-hover overflow-hidden rounded-2xl bg-cream shadow-sm">
+                <img src={product.image} alt={product.name} className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="p-5">
                   <h3 className="text-base">{product.name}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{product.body}</p>

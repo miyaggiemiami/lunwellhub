@@ -57,7 +57,7 @@ export default function About() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {VALUES.map(({ icon: Icon, title, body }) => (
-              <article key={title} className="rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
+              <article key={title} className="card-hover rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-forest-100 text-forest">
                   <Icon className="h-5 w-5" />
                 </div>

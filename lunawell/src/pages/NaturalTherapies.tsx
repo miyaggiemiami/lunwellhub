@@ -41,7 +41,7 @@ export default function NaturalTherapies() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {THERAPIES.map((t) => (
-              <div key={t.title} className="rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
+              <div key={t.title} className="card-hover rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
                 <h3 className="text-xl">{t.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.body}</p>
               </div>

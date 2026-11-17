@@ -34,7 +34,7 @@ export default function Fees() {
         <div className="container-content">
           <div className="grid gap-6 md:grid-cols-2">
             {CONSULTATION_OPTIONS.map((fee) => (
-              <div key={fee.name} className="rounded-2xl border border-forest/5 bg-cream p-8 shadow-sm">
+              <div key={fee.name} className="card-hover rounded-2xl border border-forest/5 bg-cream p-8 shadow-sm">
                 <div>
                   <h3 className="text-xl">{fee.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-soft">{fee.body}</p>

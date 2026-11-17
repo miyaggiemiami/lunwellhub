@@ -146,7 +146,7 @@ export default function Home() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {PILLARS.map(({ icon: Icon, title, body }) => (
-              <div key={title} className="rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
+              <div key={title} className="card-hover rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-forest-100 text-forest">
                   <Icon className="h-5 w-5" />
                 </div>
@@ -230,9 +230,9 @@ export default function Home() {
               <Link
                 key={service.to}
                 to={service.to}
-                className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md"
+                className="group card-hover overflow-hidden rounded-2xl bg-white shadow-sm"
               >
-                <img src={service.image} alt={service.label} className="aspect-[4/3] w-full object-cover" />
+                <img src={service.image} alt={service.label} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="p-6">
                   <h3 className="text-xl">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-soft">{service.body}</p>
@@ -259,9 +259,9 @@ export default function Home() {
               <Link
                 key={product.name}
                 to="/products"
-                className="group overflow-hidden rounded-2xl bg-cream shadow-sm transition-shadow hover:shadow-md"
+                className="group card-hover overflow-hidden rounded-2xl bg-cream shadow-sm"
               >
-                <img src={product.image} alt={product.name} className="aspect-square w-full object-cover" />
+                <img src={product.image} alt={product.name} className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="p-5">
                   <h3 className="text-base">{product.name}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{product.body}</p>

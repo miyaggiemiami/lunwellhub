@@ -59,7 +59,7 @@ export default function WeightManagement() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {STEPS.map((step, i) => (
-              <div key={step.title} className="rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
+              <div key={step.title} className="card-hover rounded-2xl border border-forest/5 bg-white p-8 shadow-sm">
                 <span className="font-serif text-3xl text-gold">{i + 1}</span>
                 <h3 className="mt-4 text-xl">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
