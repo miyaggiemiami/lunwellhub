@@ -5,8 +5,6 @@ export const SITE = {
   doctorEmail: (import.meta.env.VITE_DOCTOR_EMAIL as string) || 'drntsiki@lunawellhub.co.za',
   address: '29 Wessels Road, Rivonia, Ground Floor',
   whatsappNumber: (import.meta.env.VITE_WHATSAPP_NUMBER as string) || '27817853273',
-  instagramUrl: 'https://www.instagram.com/',
-  facebookUrl: 'https://www.facebook.com/',
 }
 
 export const whatsappHref = `https://wa.me/${SITE.whatsappNumber}`

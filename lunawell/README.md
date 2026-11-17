@@ -50,19 +50,14 @@ lunawell/
 ## Getting started
 
 ```bash
-npm install
-npm run dev       # start local dev server (http://localhost:5173)
-npm run build     # production build → dist/
-npm run preview   # preview the production build locally
-npm run lint       # ESLint
+pnpm install
+pnpm dev       # start local dev server (http://localhost:5173)
+pnpm build     # production build → dist/
+pnpm preview   # preview the production build locally
+pnpm lint      # ESLint
 ```
 
-> **Note:** this project was authored in a sandboxed environment with no
-> network access, so the build could not be run and verified here (`npm
-> install` could not reach the npm registry). The code follows standard,
-> current Vite/React/TypeScript/Tailwind conventions throughout and should
-> build cleanly with `npm install && npm run build` — please run that as
-> your first step and open an issue/let me know if anything doesn't compile.
+The production build and lint checks pass locally with pnpm.
 
 ## Environment variables
 
@@ -136,45 +131,15 @@ All of this lives as reusable tokens in `tailwind.config.js` and
 - Fully responsive from mobile through desktop (the nav collapses to a
   slide-down menu under `lg`, cards and hero stack on small screens).
 
-## Known limitations — please read
+## Content and deployment notes
 
-I own only the seven screenshots you provided (all from the **Home page**)
-and could not browse the live app further: `intrepid-luna-well-path.base44.app`
-is a fully client-rendered SPA, and my tooling can only fetch a URL's raw
-HTML (which returns just the empty React shell/meta tags for a site like
-this) and cannot click through to or fetch sub-pages that weren't already
-linked in a prior search/fetch result. I also had no network access in the
-build sandbox, so I could not download any real photography, run `npm
-install`, or execute a build to verify it compiles.
-
-As a result:
-
-1. **Home page** — layout, copy, section order, colors, and typography are
-   rebuilt closely from your screenshots. Two small gaps: the "Three
-   pillars" card body text was cropped in your screenshot, so I completed
-   those sentences plausibly rather than guessing wrong; and there's no
-   screenshot of the site's footer, so I designed one that's consistent
-   with the rest of the brand — please review/edit its content and links.
-2. **Weight Management, Peptide Therapy, Natural Therapies, Products, Fees,
-   and Book pages** — I never saw these pages, so they are **built from
-   scratch** using the same design system and only the fragments of real
-   copy visible on the homepage (the three service-card descriptions, the
-   four product names/descriptions). Treat their content, pricing, and
-   section structure as a reasonable starting placeholder, not a faithful
-   reproduction — please replace with your actual copy/pricing before
-   launch.
-3. **All photography** is a labelled placeholder box (e.g. "Portrait of
-   LunaWell's doctor in clinic"), not the real photos — I had no way to
-   retrieve the originals. Drop your real images into `src/assets` and
-   swap them into `ImagePlaceholder` usages (or replace the component
-   calls with `<img>` tags directly).
-4. **Booking form backend** — Base44's built-in backend/database is
-   replaced with a bring-your-own-endpoint form (see "The Book page"
-   above) rather than a specific hosted service, since I don't know which
-   backend you'd prefer.
-5. **Build not verified** — I could not run `npm install`/`npm run build`
-   in this environment (no network access), so please run those as your
-   first step after downloading.
+- The Home page follows the available screenshots. Other service and
+  informational pages were built using the same design system; verify
+  treatment descriptions and fees against clinic-approved information.
+- Page and product imagery uses the available assets in `public/`, reused
+  where the subject matches.
+- The booking form requires a configured endpoint for direct submission.
+  Without one, it opens a pre-filled email to `VITE_CLINIC_EMAIL`.
 
 ## Improvements made over the original
 

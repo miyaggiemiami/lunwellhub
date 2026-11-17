@@ -58,10 +58,10 @@ export default function ClinicalPsychologist() {
           </div>
           <div className="max-w-2xl">
             <p className="text-lg leading-relaxed text-ink-soft">
-              A professional biography will be added here once approved.
+              Her academic background includes an MSc in Clinical Psychology from UKZN, a BSocSci Honours in Psychology from SACAP, and a BA from Wits.
             </p>
             <p className="mt-5 border-l-2 border-gold/70 pl-4 text-sm leading-relaxed text-ink-faint">
-              Noluthando Mauze is an independent practitioner. Her practice is separate from LunaWell Wellness Clinic.
+              Her practice is independent of LunaWell Wellness Clinic.
             </p>
           </div>
         </div>

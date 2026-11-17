@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Instagram, Facebook } from './icons'
+import { Phone, Mail, MapPin } from './icons'
 import { SITE } from '@/config/site'
 
 export default function Footer() {
@@ -14,26 +14,6 @@ export default function Footer() {
           <p className="max-w-xs text-sm leading-relaxed text-white/60">
             Doctor-led wellness specialising in weight management, peptide therapy and natural therapies.
           </p>
-          <div className="mt-5 flex gap-3">
-            <a
-              href={SITE.instagramUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LunaWell on Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold"
-            >
-              <Instagram className="h-4 w-4" />
-            </a>
-            <a
-              href={SITE.facebookUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LunaWell on Facebook"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold hover:text-gold"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
-          </div>
         </div>
 
         <div>
