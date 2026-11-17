@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import PageHero from '@/components/PageHero'
-import { Check, MessageCircle, Phone, Mail } from '@/components/icons'
+import { Check, MessageCircle, Phone, Mail, MapPin } from '@/components/icons'
 import { SITE, whatsappHref } from '@/config/site'
 
 const SERVICES = [
@@ -145,6 +145,14 @@ export default function Book() {
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-gold" />
                 <a href={`mailto:${SITE.email}`} className="text-ink-soft hover:text-forest">{SITE.email}</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-4 w-4 text-gold" />
+                <a href={`mailto:${SITE.doctorEmail}`} className="text-ink-soft hover:text-forest">{SITE.doctorEmail}</a>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <span className="text-ink-soft">{SITE.address}</span>
               </li>
             </ul>
           </aside>

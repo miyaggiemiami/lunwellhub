@@ -3,6 +3,7 @@
 interface ImportMetaEnv {
   readonly VITE_FORM_ENDPOINT?: string
   readonly VITE_CLINIC_EMAIL?: string
+  readonly VITE_DOCTOR_EMAIL?: string
   readonly VITE_WHATSAPP_NUMBER?: string
 }
 

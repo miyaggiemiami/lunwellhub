@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import { ArrowRight, MessageCircle, ShieldCheck, Stethoscope, Leaf, HeartHandshake, Flask, Sparkle } from '@/components/icons'
 import { whatsappHref } from '@/config/site'
 
@@ -56,7 +55,7 @@ const SERVICES = [
     body: 'Advanced peptide therapies supporting metabolic health, inflammation reduction, recovery, and skin health under medical supervision.',
     to: '/peptide-therapy',
     label: 'Vials of peptide therapy compounds',
-    image: undefined,
+    image: '/peptide%20therapy.jpg',
   },
   {
     title: 'Natural Therapies',
@@ -233,11 +232,7 @@ export default function Home() {
                 to={service.to}
                 className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md"
               >
-                {service.image ? (
-                  <img src={service.image} alt={service.label} className="aspect-[4/3] w-full object-cover" />
-                ) : (
-                  <ImagePlaceholder label={service.label} className="aspect-[4/3] w-full rounded-none" />
-                )}
+                <img src={service.image} alt={service.label} className="aspect-[4/3] w-full object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-soft">{service.body}</p>
@@ -266,11 +261,7 @@ export default function Home() {
                 to="/products"
                 className="group overflow-hidden rounded-2xl bg-cream shadow-sm transition-shadow hover:shadow-md"
               >
-                {product.image ? (
-                  <img src={product.image} alt={product.name} className="aspect-square w-full object-cover" />
-                ) : (
-                  <ImagePlaceholder label={product.name} className="aspect-square w-full rounded-none" />
-                )}
+                <img src={product.image} alt={product.name} className="aspect-square w-full object-cover" />
                 <div className="p-5">
                   <h3 className="text-base">{product.name}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{product.body}</p>

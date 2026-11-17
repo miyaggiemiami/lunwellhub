@@ -5,6 +5,7 @@ import { SITE } from '@/config/site'
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
+  { label: 'About Us', to: '/about-us' },
   { label: 'Weight Management', to: '/weight-management' },
   { label: 'Peptide Therapy', to: '/peptide-therapy' },
   { label: 'Natural Therapies', to: '/natural-therapies' },

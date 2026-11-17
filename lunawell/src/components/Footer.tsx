@@ -49,6 +49,7 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-wide text-white">Clinic</h3>
           <ul className="space-y-2.5 text-sm">
+            <li><Link to="/about-us" className="transition-colors hover:text-gold">About Us</Link></li>
             <li><Link to="/fees" className="transition-colors hover:text-gold">Fees</Link></li>
             <li><Link to="/book" className="transition-colors hover:text-gold">Book a Consultation</Link></li>
             <li><Link to="/clinical-psychologist" className="transition-colors hover:text-gold">Independent Clinical Psychologist</Link></li>
@@ -67,9 +68,13 @@ export default function Footer() {
               <Mail className="h-4 w-4 shrink-0 text-gold" />
               <a href={`mailto:${SITE.email}`} className="transition-colors hover:text-gold">{SITE.email}</a>
             </li>
+            <li className="flex items-center gap-2.5">
+              <Mail className="h-4 w-4 shrink-0 text-gold" />
+              <a href={`mailto:${SITE.doctorEmail}`} className="transition-colors hover:text-gold">{SITE.doctorEmail}</a>
+            </li>
             <li className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              <span>Johannesburg, South Africa</span>
+              <span>{SITE.address}</span>
             </li>
           </ul>
         </div>

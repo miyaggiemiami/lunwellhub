@@ -1,5 +1,4 @@
 import PageHero from '@/components/PageHero'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTASection from '@/components/CTASection'
 
 const APPLICATIONS = [
@@ -32,7 +31,11 @@ export default function PeptideTherapy() {
               individual health profile and goals.
             </p>
           </div>
-          <ImagePlaceholder label="Vials of peptide therapy compounds on a marble surface" className="aspect-[4/3] w-full" />
+          <img
+            src="/peptide%20therapy.jpg"
+            alt="Vials of peptide therapy compounds on a marble surface"
+            className="aspect-[4/3] w-full rounded-2xl object-cover"
+          />
         </div>
       </section>
 

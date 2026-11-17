@@ -1,9 +1,11 @@
+import { SITE } from '@/config/site'
+
 const NAME = 'Noluthando Mauze'
 const PHONE = '+27 72 368 2703'
 const PHONE_LINK = 'tel:+27723682703'
 const WHATSAPP_LINK = 'https://wa.me/27723682703'
 const EMAIL = 'noluthandomauze.psych@gmail.com'
-const ADDRESS = '29 Wessel Rd, Rivonia, Sandton, Gauteng'
+const ADDRESS = SITE.address
 const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`
 const MAPS_EMBED = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`
 const APPOINTMENT_LINK = `https://wa.me/27723682703?text=${encodeURIComponent('Hello Noluthando, I would like to book an appointment.')}`

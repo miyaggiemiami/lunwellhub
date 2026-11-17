@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
+import About from './pages/About'
 import WeightManagement from './pages/WeightManagement'
 import PeptideTherapy from './pages/PeptideTherapy'
 import NaturalTherapies from './pages/NaturalTherapies'
@@ -20,6 +21,7 @@ function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/weight-management" element={<WeightManagement />} />
           <Route path="/peptide-therapy" element={<PeptideTherapy />} />
           <Route path="/natural-therapies" element={<NaturalTherapies />} />

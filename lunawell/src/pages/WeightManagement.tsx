@@ -1,5 +1,4 @@
 import PageHero from '@/components/PageHero'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTASection from '@/components/CTASection'
 import { Check } from '@/components/icons'
 
@@ -29,7 +28,11 @@ export default function WeightManagement() {
 
       <section className="section bg-white">
         <div className="container-content grid items-center gap-12 lg:grid-cols-2">
-          <ImagePlaceholder label="Doctor consulting a patient on weight management" className="aspect-[4/3] w-full order-last lg:order-first" />
+          <img
+            src="/weight-management-consultation.jpg"
+            alt="Doctor consulting a patient on weight management"
+            className="order-last aspect-[4/3] w-full rounded-2xl object-cover lg:order-first"
+          />
           <div>
             <h2 className="text-3xl md:text-4xl">What the programme includes</h2>
             <p className="mt-4 text-ink-soft">

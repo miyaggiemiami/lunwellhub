@@ -71,7 +71,8 @@ Copy `.env.example` to `.env` and fill in real values:
 | Variable | Purpose |
 |---|---|
 | `VITE_FORM_ENDPOINT` | Where the Book page's consultation form submits to (see below). Leave blank to fall back to a `mailto:` link. |
-| `VITE_CLINIC_EMAIL` | Clinic email shown in the footer and used as the mailto fallback. |
+| `VITE_CLINIC_EMAIL` | Clinic email shown in the footer and booking page, and used as the mailto fallback. |
+| `VITE_DOCTOR_EMAIL` | Doctor's email shown in the footer and booking page. |
 | `VITE_WHATSAPP_NUMBER` | WhatsApp number (international format, digits only) used for "Chat on WhatsApp" links. |
 
 ## The Book page (replacing Base44's built-in form/backend)
